@@ -3,7 +3,7 @@
 
 #### ID结构
 ttttttttttttttttttttttttttttttttttttttttttccccccccccccmmmmmmmmmm
-* t:毫秒时间戳（41个bit）
+* t:毫秒时间戳（42个bit）
 * c:时间点计数器（14个bit）
 * m:生成器实例标识（8个bit）
 
