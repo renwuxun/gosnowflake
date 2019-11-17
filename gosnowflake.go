@@ -21,9 +21,7 @@ func nowms() uint64 {
 
 // New create uint64 id generator
 func New(gpid uint64) *Snowflake {
-	if gpid > 255 {
-		panic("gpid must in [0, 255]")
-	}
+	gpid &= 0xff
 	sf := &Snowflake{
 		statems: 0,
 		gpid:    gpid,
